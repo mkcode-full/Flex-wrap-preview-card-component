@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --clr-gold: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-green: hsl(179, 100%, 13%);
+    --clr-white-transparent: hsla(0, 0%, 100%, 0.75);
+    --clr-gray: hsl(0, 0%, 95%);
+
+    /* Typography */
+    --ff-body: 'Lexend Deca', sans-serif;
+    --ff-heading: 'Big Shoulders Display', sans-serif;
+    --fs-body: 15px;
+}
+
+body {
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    background-color: var(--clr-gray);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    width: 100%;
+    padding: 50px;
+
+}
+
+.card-sedans {
+    background-color: var(--clr-gold);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-sedans .learn-more:hover {
+    background-color: var(--clr-gold);
+    color: white;
+    border: 2px solid white;
+}
+
+.logo-img {
+    margin-bottom: 30px;
+}
+
+.content-title {
+    color: var(--clr-gray);
+    font-family: var(--ff-heading);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+}
+
+.content-text {
+    color: var(--clr-white-transparent);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.learn-more {
+    display: block;
+    margin-top: 60px;
+    max-width: 180px;
+    width: 60%;
+    padding: 12px;
+    color: var(--clr-gold);
+    background-color: var(--clr-gray);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*Card2 Suvs */
+
+.card-suvs {
+    background-color: var(--clr-cyan);
+}
+
+.card-suvs .learn-more {
+    color: var(--clr-cyan);
+
+
+}
+
+.card-suvs .learn-more:hover {
+    background-color: var(--clr-cyan);
+    color: white;
+    border: 2px solid white;
+}
+
+/*Card3 Luxury*/
+
+
+.card-luxury {
+    background-color: var(--clr-green);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.card-luxury .learn-more {
+    color: var(--clr-green);
+}
+
+.card-luxury .learn-more:hover {
+    background-color: var(--clr-green);
+    color: white;
+    border: 2px solid white;
+}
+
+
+@media (max-width:640px) {
+
+    .card-luxury {
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+    }
+
+    .card-sedans {
+    background-color: var(--clr-gold);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+}
+
+
+
+
+
+}
